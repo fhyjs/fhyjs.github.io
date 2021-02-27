@@ -3,7 +3,7 @@
 	this.velocity=new THREE.Vector3(0,0,0);//速度;
 	this.velocity.rotateX(10);//旋转;
 	this.gravity=new THREE.Vector3(0,0,0.1);//加速度;
-	this.drag=0.4;//速度相乘系数;
+	this.drag=1;//速度相乘系数;
 };
 //Particle:粒子;
 //prototype:原形;
