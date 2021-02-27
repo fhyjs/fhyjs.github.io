@@ -2,8 +2,8 @@
 	THREE.Particle.call(this,material);
 	this.velocity=new THREE.Vector3(0,0,0);//速度;
 	this.velocity.rotateX(10);//旋转;
-	this.gravity=new THREE.Vector3(0,0,0.05);//加速度;
-	this.drag=0.2;//速度相乘系数;
+	this.gravity=new THREE.Vector3(0,0,0.1);//加速度;
+	this.drag=0.5;//速度相乘系数;
 };
 //Particle:粒子;
 //prototype:原形;
