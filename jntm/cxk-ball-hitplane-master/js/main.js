@@ -184,12 +184,12 @@ var zanting=function(){
     if(number==0){
         suspenddiv.style.display="block";
         if(document.removeEventListener){
-            mainDiv.removeEventListener("touchstart",yidong,true);
-            bodyobj.removeEventListener("touchstart",bianjie,true);
+            mainDiv.removeEventListener("mousedown",yidong,true);
+            bodyobj.removeEventListener("mousedown",bianjie,true);
         }
         else if(document.detachEvent){
-            mainDiv.detachEvent("ontouchstart",yidong);
-            bodyobj.detachEvent("ontouchstart",bianjie);
+            mainDiv.detachEvent("onmousedown",yidong);
+            bodyobj.detachEvent("onmousedown",bianjie);
         }
         clearInterval(set);
         number=1;
@@ -197,12 +197,12 @@ var zanting=function(){
     else{
         suspenddiv.style.display="none";
         if(document.addEventListener){
-            mainDiv.addEventListener("touchstart",yidong,true);
-            bodyobj.addEventListener("touchstart",bianjie,true);
+            mainDiv.addEventListener("mousedown",yidong,true);
+            bodyobj.addEventListener("mousedown",bianjie,true);
         }
         else if(document.attachEvent){
-            mainDiv.attachEvent("ontouchstart",yidong);
-            bodyobj.attachEvent("ontouchstart",bianjie);
+            mainDiv.attachEvent("onmousedown",yidong);
+            bodyobj.attachEvent("onmousedown",bianjie);
         }
         set=setInterval(start,20);
         number=0;
