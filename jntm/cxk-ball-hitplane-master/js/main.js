@@ -30,7 +30,7 @@ var gameover=document.getElementById("sound-gameover");
     var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
     var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
     if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
-        alert("检测到为PC浏览\n打开影响式设计模式（Ctrl+Shift+M ）正常浏览（最好选iphone X/XS）")
+        //alert("检测到为PC浏览\n打开影响式设计模式（Ctrl+Shift+M ）正常浏览（最好选iphone X/XS）")
     }
     
 /*
@@ -178,7 +178,7 @@ var yidong=function(){
 }
 /*
 暂停事件
- */
+ 
 var number=0;
 var zanting=function(){
     if(number==0){
@@ -208,6 +208,7 @@ var zanting=function(){
         number=0;
     }
 }
+*/
 //判断本方飞机是否移出边界,如果移出边界,则取消mousemove事件,反之加上mousemove事件
 var bianjie=function(){
     var oevent=window.event //鼠标位置
