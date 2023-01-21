@@ -159,9 +159,8 @@ var yidong=function(){
     ourPlan.addEventListener('mousedown',function(ev){
         this.addEventListener('mousemove', function(ev){
             ev.preventDefault();
-            var ev = ev.touches[0];
-            ourPlan.style.top = (ev.pageY-41)+'px';
-            ourPlan.style.left = (ev.pageX-33)+'px';
+            ourPlan.style.top = (ev.clientY-41)+'px';
+            ourPlan.style.left = (ev.clientX-33)+'px';
             endTouchX = ev.pageX;
             endTouchY = ev.pageY;
         },false);
