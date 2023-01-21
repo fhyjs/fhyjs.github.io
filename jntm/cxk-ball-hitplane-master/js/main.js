@@ -276,7 +276,7 @@ selfplan.imagenode.style.display="none";
 /*
 敌机对象数组
  */
-var enemys=[];
+enemys=[];
 
 /*
 子弹对象数组
