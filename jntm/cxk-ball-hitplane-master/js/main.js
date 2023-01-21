@@ -156,15 +156,15 @@ var yidong=function(){
 //    document.getElementsByTagName('img')[0]..style.top=selfplanY-selfplan.plansizeY/2+"px";
     var endTouchY = 0;
     var endTouchX = 0;
-    ourPlan.addEventListener('mousedown',function(ev){
-        this.addEventListener('mousemove', function(ev){
+    document.addEventListener('mousedown',function(ev){
+        document.addEventListener('mousemove', function(ev){
             ev.preventDefault();
             ourPlan.style.top = (ev.clientY-41)+'px';
             ourPlan.style.left = (ev.clientX-33)+'px';
             endTouchX = ev.pageX;
             endTouchY = ev.pageY;
         },false);
-        this.addEventListener('mouseup', function(ev){
+        document.addEventListener('mouseup', function(ev){
             this.ontouchmove = null;
             this.ontouchend = null;
             var x;
